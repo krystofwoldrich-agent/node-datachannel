@@ -29,6 +29,7 @@ if (NOT CMAKE_SYSTEM_NAME STREQUAL "Windows")
 endif()
 
 find_package(OpenSSL REQUIRED)
+find_package(Git REQUIRED)
 
 include(FetchContent)
 
@@ -45,6 +46,9 @@ FetchContent_Declare(
     libdatachannel
     GIT_REPOSITORY https://github.com/paullouisageneau/libdatachannel.git
     GIT_TAG "${LIBDATACHANNEL_GIT_TAG}"
+    PATCH_COMMAND
+        "${GIT_EXECUTABLE}" apply --whitespace=nowarn
+        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/patches/libdatachannel-gcc10-seed-seq.patch"
 )
 
 option(NO_MEDIA "Disable media transport support in libdatachannel" OFF)

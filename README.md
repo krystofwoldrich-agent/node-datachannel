@@ -3,7 +3,7 @@
 ![Linux CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Linux/badge.svg) ![Windows CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Win/badge.svg) ![Mac x64 CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Mac%20x64/badge.svg) ![Mac M1 CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Mac%20M1/badge.svg)
 
 > [!IMPORTANT]
-> This is a fork of [murat-dogan/node-datachannel](https://github.com/murat-dogan/node-datachannel), published as `@krystofs/node-datachannel`. It is based on upstream node-datachannel v0.33.2 (`29fde0d`) and pins libdatachannel upstream `master` at [`51085b8de4e6185dc019e3705c88b87933d7c3f6`](https://github.com/paullouisageneau/libdatachannel/commit/51085b8de4e6185dc019e3705c88b87933d7c3f6).
+> This is a fork of [murat-dogan/node-datachannel](https://github.com/murat-dogan/node-datachannel), published as `@krystofs/node-datachannel`. It is based on upstream node-datachannel v0.33.2 (`29fde0d`) and pins libdatachannel upstream `master` at [`51085b8de4e6185dc019e3705c88b87933d7c3f6`](https://github.com/paullouisageneau/libdatachannel/commit/51085b8de4e6185dc019e3705c88b87933d7c3f6). A one-line compatibility patch makes that revision's `std::seed_seq` construction compile with the supported GCC 10 baseline.
 
 - Lightweight
   - No need to deal with WebRTC stack!
