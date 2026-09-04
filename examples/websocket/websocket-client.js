@@ -1,4 +1,4 @@
-import nodeDataChannel from 'node-datachannel';
+import nodeDataChannel from '@krystofs/node-datachannel';
 
 const clientSocket = new nodeDataChannel.WebSocket();
 

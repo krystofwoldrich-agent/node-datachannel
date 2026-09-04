@@ -1,5 +1,5 @@
 import readline from 'readline';
-import nodeDataChannel from 'node-datachannel';
+import nodeDataChannel from '@krystofs/node-datachannel';
 import { readFile } from 'fs/promises';
 
 // These are generated with

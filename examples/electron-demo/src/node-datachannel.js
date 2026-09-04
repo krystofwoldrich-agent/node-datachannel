@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const nodeDataChannel = require('node-datachannel');
+const nodeDataChannel = require('@krystofs/node-datachannel');
 const WebSocket = require('ws');
 const { ipcMain } = require('electron');
 

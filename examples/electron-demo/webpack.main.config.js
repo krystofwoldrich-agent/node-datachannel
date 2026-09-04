@@ -11,14 +11,14 @@ module.exports = {
     rules: require('./webpack.rules'),
   },
   externals: {
-    'node-datachannel': 'node-datachannel',
+    '@krystofs/node-datachannel': '@krystofs/node-datachannel',
   },
   plugins: [
     new CopyPlugin({
       patterns: [
         {
-          from: 'node_modules/node-datachannel',
-          to: 'node_modules/node-datachannel',
+          from: 'node_modules/@krystofs/node-datachannel',
+          to: 'node_modules/@krystofs/node-datachannel',
         },
       ],
     }),

@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-datachannel": "file:../.."
+    "@krystofs/node-datachannel": "file:../.."
   }
 }

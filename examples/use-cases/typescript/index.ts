@@ -1,5 +1,5 @@
-import nodeDataChannel from 'node-datachannel';
-import { RTCPeerConnection } from 'node-datachannel/polyfill';
+import nodeDataChannel from '@krystofs/node-datachannel';
+import { RTCPeerConnection } from '@krystofs/node-datachannel/polyfill';
 
 nodeDataChannel.initLogger('Debug');
 

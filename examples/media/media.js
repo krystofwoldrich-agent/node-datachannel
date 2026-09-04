@@ -1,5 +1,5 @@
 import readline from 'readline';
-import nodeDataChannel from 'node-datachannel';
+import nodeDataChannel from '@krystofs/node-datachannel';
 import dgram from 'dgram';
 
 var client = dgram.createSocket('udp4');

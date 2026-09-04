@@ -1,6 +1,6 @@
 import Peer from 'simple-peer';
-import nodeDatachannelPolyfill from 'node-datachannel/polyfill';
-import nodeDataChannel from 'node-datachannel';
+import nodeDatachannelPolyfill from '@krystofs/node-datachannel/polyfill';
+import nodeDataChannel from '@krystofs/node-datachannel';
 
 nodeDataChannel.initLogger('Info');
 

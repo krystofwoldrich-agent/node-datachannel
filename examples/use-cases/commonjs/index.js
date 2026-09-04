@@ -1,5 +1,5 @@
-const nodeDataChannel = require('node-datachannel');
-const { RTCPeerConnection } = require('node-datachannel/polyfill');
+const nodeDataChannel = require('@krystofs/node-datachannel');
+const { RTCPeerConnection } = require('@krystofs/node-datachannel/polyfill');
 
 nodeDataChannel.initLogger('Debug');
 

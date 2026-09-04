@@ -32,11 +32,19 @@ find_package(OpenSSL REQUIRED)
 
 include(FetchContent)
 
-# Fetch libdatachannel
+# Fetch libdatachannel. Keep the default pinned for reproducible builds while
+# allowing callers to override it with -DLIBDATACHANNEL_GIT_TAG=<revision>.
+set(
+    LIBDATACHANNEL_GIT_TAG
+    "51085b8de4e6185dc019e3705c88b87933d7c3f6"
+    CACHE STRING
+    "libdatachannel branch, tag, or commit"
+)
+
 FetchContent_Declare(
     libdatachannel
     GIT_REPOSITORY https://github.com/paullouisageneau/libdatachannel.git
-    GIT_TAG "v0.24.3"
+    GIT_TAG "${LIBDATACHANNEL_GIT_TAG}"
 )
 
 option(NO_MEDIA "Disable media transport support in libdatachannel" OFF)

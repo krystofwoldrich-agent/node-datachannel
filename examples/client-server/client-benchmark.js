@@ -7,7 +7,7 @@ const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
 import readline from 'readline';
-import nodeDataChannel from 'node-datachannel';
+import nodeDataChannel from '@krystofs/node-datachannel';
 
 // Init Logger
 nodeDataChannel.initLogger('Info');

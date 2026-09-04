@@ -1,4 +1,4 @@
-import nodeDataChannel from 'node-datachannel';
+import nodeDataChannel from '@krystofs/node-datachannel';
 
 const ws = new nodeDataChannel.WebSocketServer({
   bindAddress: '127.0.0.1',

@@ -2,8 +2,8 @@
 // from https://github.com/achingbrain
 
 import why from 'why-is-node-running';
-import { RTCPeerConnection } from 'node-datachannel/polyfill';
-import { initLogger } from 'node-datachannel';
+import { RTCPeerConnection } from '@krystofs/node-datachannel/polyfill';
+import { initLogger } from '@krystofs/node-datachannel';
 
 initLogger('Error');
 

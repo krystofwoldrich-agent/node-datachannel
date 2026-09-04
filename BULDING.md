@@ -8,7 +8,7 @@
 ## Building from source
  
  ```sh
- > git clone https://github.com/murat-dogan/node-datachannel.git
+ > git clone https://github.com/krystofwoldrich-agent/node-datachannel.git
  > cd node-datachannel
  > npm install --ignore-scripts
  > npm run compile

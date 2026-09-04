@@ -1,6 +1,9 @@
 # WebRTC For Node.js and Electron ( with WebSocket)
 
-![Linux CI Build](https://github.com/murat-dogan/node-datachannel/workflows/Build%20-%20Linux/badge.svg) ![Windows CI Build](https://github.com/murat-dogan/node-datachannel/workflows/Build%20-%20Win/badge.svg) ![Mac x64 CI Build](https://github.com/murat-dogan/node-datachannel/workflows/Build%20-%20Mac%20x64/badge.svg) ![Mac M1 CI Build](https://github.com/murat-dogan/node-datachannel/workflows/Build%20-%20Mac%20M1/badge.svg)
+![Linux CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Linux/badge.svg) ![Windows CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Win/badge.svg) ![Mac x64 CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Mac%20x64/badge.svg) ![Mac M1 CI Build](https://github.com/krystofwoldrich-agent/node-datachannel/workflows/Build%20-%20Mac%20M1/badge.svg)
+
+> [!IMPORTANT]
+> This is a fork of [murat-dogan/node-datachannel](https://github.com/murat-dogan/node-datachannel), published as `@krystofs/node-datachannel`. It is based on upstream node-datachannel v0.33.2 (`29fde0d`) and pins libdatachannel upstream `master` at [`51085b8de4e6185dc019e3705c88b87933d7c3f6`](https://github.com/paullouisageneau/libdatachannel/commit/51085b8de4e6185dc019e3705c88b87933d7c3f6).
 
 - Lightweight
   - No need to deal with WebRTC stack!
@@ -13,21 +16,21 @@ This project is Node.js bindings for [libdatachannel](https://github.com/paullou
 ## Install
 
 ```sh
-npm install node-datachannel
+npm install @krystofs/node-datachannel
 ```
 
 ## Supported Platforms
 
-`node-datachannel` targets N-API version 8 and supports Node.js **v18.20 and above** (including Node.js 20, 22, and 24+). Prebuilt binaries are distributed automatically via platform-specific npm packages (`optionalDependencies`).
+`@krystofs/node-datachannel` targets N-API version 8 and supports Node.js **v18.20 and above** (including Node.js 20, 22, and 24+). Prebuilt binaries are distributed automatically via platform-specific npm packages (`optionalDependencies`).
 
 | Architecture | Linux (glibc) | Linux (musl / Alpine) | macOS (Apple Silicon / Intel) | Windows | Android (Termux / Bionic) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **x64** | `@node-datachannel/linux-x64-gnu` | `@node-datachannel/linux-x64-musl` | `@node-datachannel/darwin-x64` | `@node-datachannel/win32-x64-msvc` | - |
-| **arm64** | `@node-datachannel/linux-arm64-gnu` | `@node-datachannel/linux-arm64-musl` | `@node-datachannel/darwin-arm64` | `@node-datachannel/win32-arm64-msvc` | `@node-datachannel/android-arm64` |
+| **x64** | `@krystofs-node-datachannel/linux-x64-gnu` | `@krystofs-node-datachannel/linux-x64-musl` | `@krystofs-node-datachannel/darwin-x64` | `@krystofs-node-datachannel/win32-x64-msvc` | - |
+| **arm64** | `@krystofs-node-datachannel/linux-arm64-gnu` | `@krystofs-node-datachannel/linux-arm64-musl` | `@krystofs-node-datachannel/darwin-arm64` | `@krystofs-node-datachannel/win32-arm64-msvc` | `@krystofs-node-datachannel/android-arm64` |
 
 ## Electron
 
-`node-datachannel` supports Electron.
+`@krystofs/node-datachannel` supports Electron.
 
 Please check [electron demo](/examples/electron-demo)
 
@@ -50,7 +53,7 @@ For an example usage, [check here](/examples/websocket)
 ## Example Usage
 
 ```js
-import nodeDataChannel from 'node-datachannel';
+import nodeDataChannel from '@krystofs/node-datachannel';
 
 // Log Level
 nodeDataChannel.initLogger('Debug');

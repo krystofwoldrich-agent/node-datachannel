@@ -14,7 +14,7 @@ Please check actual situation [here](/test/wpt-tests/)
 
 ```js
 import Peer from 'simple-peer';
-import nodeDatachannelPolyfill from 'node-datachannel/polyfill';
+import nodeDatachannelPolyfill from '@krystofs/node-datachannel/polyfill';
 
 var peer1 = new Peer({ initiator: true, wrtc: nodeDatachannelPolyfill });
 var peer2 = new Peer({ wrtc: nodeDatachannelPolyfill });
